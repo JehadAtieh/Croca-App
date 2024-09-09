@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".Num_Activity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EE080E39"
+        tools:context=".Num_Activity">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="290dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="رقم اللوحة للمركبات"
+            android:textColor="#D5E2ED"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/btnSignIn"
+            app:layout_constraintStart_toStartOf="@+id/btnSignIn"
+            app:layout_constraintTop_toBottomOf="@+id/btnSignIn" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/background_oval"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView19"
+                android:layout_width="44dp"
+                android:layout_height="33dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:onClick="backk"
+                app:srcCompat="@drawable/backk" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/btnSignIn"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="65dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="410dp"
+            android:layout_height="1135dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/pct1"
+            app:layout_constraintEnd_toEndOf="@+id/textView4"
+            app:layout_constraintStart_toStartOf="@+id/textView4"
+            app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button11"
+                style="@android:style/Widget.Button"
+                android:layout_width="207dp"
+                android:layout_height="65dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/background_btn_1"
+                android:onClick="next"
+                android:text="التالي"
+                android:textColor="#ffffff"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/ll3"
+                app:layout_constraintHorizontal_bias="0.437"
+                app:layout_constraintStart_toStartOf="@+id/ll3"
+                app:layout_constraintTop_toBottomOf="@+id/ll3" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="250dp"
+                android:layout_height="65dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="5dp"
+                android:gravity="center"
+                android:text="او قم بكتابة رقم اللوحة"
+                android:textColor="#EE080E39"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/button"
+                app:layout_constraintHorizontal_bias="0.45"
+                app:layout_constraintStart_toStartOf="@+id/button"
+                app:layout_constraintTop_toBottomOf="@+id/button" />
+
+            <LinearLayout
+                android:id="@+id/ll"
+                android:layout_width="344dp"
+                android:layout_height="67dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="25dp"
+                android:layout_weight="0.8"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                app:layout_constraintEnd_toEndOf="@+id/textView9"
+                app:layout_constraintStart_toStartOf="@+id/textView9"
+                app:layout_constraintTop_toBottomOf="@+id/textView9">
+
+                <EditText
+                    android:id="@+id/userName"
+                    android:layout_width="300dp"
+                    android:layout_height="64dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/edt_background"
+                    android:ems="10"
+                    android:gravity="center|center"
+                    android:hint=" ادخل رقم المركبة الاولى"
+                    android:inputType="number"
+                    android:textColor="@color/black"
+                    android:textColorHint="#EE080E39"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/textView9"
+                    app:layout_constraintHorizontal_bias="0.47"
+                    app:layout_constraintStart_toStartOf="@+id/textView9"
+                    app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+                <ImageButton
+                    android:id="@+id/micButton"
+                    android:layout_width="40dp"
+                    android:layout_height="67dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="0.2"
+                    android:background="#D5E2ED"
+                    android:src="@drawable/baseline_mic_24"
+                    android:onClick="mic"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll1"
+                android:layout_width="344dp"
+                android:layout_height="67dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.8"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                app:layout_constraintEnd_toEndOf="@+id/ll"
+                app:layout_constraintStart_toStartOf="@+id/ll"
+                app:layout_constraintTop_toBottomOf="@+id/ll">
+
+                <EditText
+                    android:id="@+id/userName2"
+                    android:layout_width="300dp"
+                    android:layout_height="64dp"
+                    android:background="@drawable/edt_background"
+                    android:ems="10"
+                    android:gravity="center|center"
+                    android:hint=" ادخل رقم المركبة الثانية"
+                    android:inputType="number"
+                    android:textColor="@color/black"
+                    android:textColorHint="#EE080E39"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+                <ImageButton
+                    android:id="@+id/micButton1"
+                    android:layout_width="40dp"
+                    android:layout_height="67dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="0.2"
+                    android:background="#D5E2ED"
+                    android:src="@drawable/baseline_mic_24"
+                    android:onClick="mic"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll2"
+                android:layout_width="344dp"
+                android:layout_height="67dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.8"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                app:layout_constraintEnd_toEndOf="@+id/ll1"
+                app:layout_constraintStart_toStartOf="@+id/ll1"
+                app:layout_constraintTop_toBottomOf="@+id/ll1">
+
+                <EditText
+                    android:id="@+id/userName3"
+                    android:layout_width="300dp"
+                    android:layout_height="64dp"
+                    android:background="@drawable/edt_background"
+                    android:ems="10"
+                    android:gravity="center|center"
+                    android:hint=" ادخل رقم المركبة الثالثة"
+                    android:inputType="number"
+                    android:textColor="@color/black"
+                    android:textColorHint="#EE080E39"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:id="@+id/micButton2"
+                    android:layout_width="40dp"
+                    android:layout_height="67dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="0.2"
+                    android:background="#D5E2ED"
+                    android:src="@drawable/baseline_mic_24"
+                    android:onClick="mic"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll3"
+                android:layout_width="344dp"
+                android:layout_height="67dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.8"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                app:layout_constraintEnd_toEndOf="@+id/ll2"
+                app:layout_constraintStart_toStartOf="@+id/ll2"
+                app:layout_constraintTop_toBottomOf="@+id/ll2">
+
+                <EditText
+                    android:id="@+id/userName4"
+                    android:layout_width="300dp"
+                    android:layout_height="64dp"
+                    android:background="@drawable/edt_background"
+                    android:ems="10"
+                    android:gravity="center|center"
+                    android:hint=" ادخل رقم المركبة الرابعة"
+                    android:inputType="number"
+                    android:textColor="@color/black"
+                    android:textColorHint="#EE080E39"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:id="@+id/micButton3"
+                    android:layout_width="40dp"
+                    android:layout_height="67dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="0.2"
+                    android:background="#D5E2ED"
+                    android:src="@drawable/baseline_mic_24"
+                    android:onClick="mic"
+                    />
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button"
+                style="@android:style/Widget.Button"
+                android:layout_width="215dp"
+                android:layout_height="65dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/background_btn_1"
+                android:text="التقط صورة لرقم اللوحة"
+                android:textColor="#ffffff"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".public_rules">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EE080E39"
+        tools:context=".public_rules">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="350dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="40dp"
+            android:gravity="center"
+            android:text="تعليمات للسلامة العامه"
+            android:textColor="#D5E2ED"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="411dp"
+            android:layout_height="984dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/pct1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.558"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button14"
+                style="@android:style/Widget.Button"
+                android:layout_width="170dp"
+                android:layout_height="65dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/background_btn_1"
+                android:text="خروج"
+                android:textColor="#ffffff"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="350dp"
+                android:layout_height="75dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="44dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/background"
+                android:gravity="center"
+                android:text=" - تحذير الاخرين : اذا كنت قادرا على ذلك وبامان ,قدم    المساعدة للاشخاص الذين يحتاجون مساعدة اضافية"
+                android:textColor="#EE080E39"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.505"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="350dp"
+                android:layout_height="110dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/background"
+                android:gravity="center"
+                android:text="- عدم التجمع حول موقع الحادث: قد يكون هناك خطر \nعلى حدوث مزيد من الحوادث أو وجود مواد خطرة. \n من الأفضل أن تبتعد عن منطقة الحادث وتمنع\n الآخرين من التجمع أيضًا "
+                android:textColor="#EE080E39"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/textView3"
+                app:layout_constraintStart_toStartOf="@+id/textView3"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="350dp"
+                android:layout_height="65dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/background"
+                android:gravity="center"
+                android:text="  -  البقاء هادئاً: حاول البقاء هادئاً وتجنب الهلع              "
+                android:textColor="#EE080E39"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/textView8"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/textView8"
+                app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="350dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/background"
+                android:gravity="center"
+                android:text="\n- تقديم الاسعافات الاولية\n\n - توقف عناء النزيف: إذا كان هناك نزيف، حاول وضع ضغط مباشر على الجرح باستخدام قماش نظيف أو ضمادة. إذا لم يتوقف النزيف، قم بإضافة مزيد من الضغط\n\n- تثبيت الكسور والتمزقات: إذا كان هناك كسور أو تمزقات، قم بتثبيت المنطقة المصابة باستخدام عصا أو عبوة فارغة مثلاً وثبتها بالرباط\n\n-  تقديم الإسعافات لضحايا الصدمة: إذا كان الشخص في حالة صدمة، قم بتقديم الدعم النفسي والراحة ومحاولة تقديم مياه وتغطية الجسم بملاءة دافئة\n\n- إعطاء الإسعافات للإختناق أو الاختناق: إذا كان هناك شخص يعاني من الاختناق، قم بإجراء عمليات الإنعاش الاصطناعي إذا كانت ضرورية أو تطبيق تقنية هيمليتش إذا كان هناك جسم معترض في مجرى التنفس\n\n- تقديم الراحة: قدم الراحة للشخص المصاب وجرى توفير المأكل والمشرب إذا كان ذلك ضروريًا  "
+                android:textColor="#EE080E39"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/textView24"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/textView24"
+                app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+

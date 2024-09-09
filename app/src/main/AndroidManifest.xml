@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.crocaproject">
+
+    <!-- Define the telephony feature as not required -->
+    <uses-feature android:name="android.hardware.telephony" android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logomain"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logomain"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CrocaProject"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".history"
+            android:exported="false" />
+        <activity
+            android:name=".public_rules"
+            android:exported="false" />
+        <activity
+            android:name=".num_car"
+            android:exported="false" />
+        <activity
+            android:name=".ccamera"
+            android:exported="false" />
+        <activity
+            android:name=".qustion"
+            android:exported="false" />
+        <activity
+            android:name=".opstion2"
+            android:exported="false" />
+        <activity
+            android:name=".Edit_Password"
+            android:exported="false" />
+        <activity
+            android:name=".GPS"
+            android:exported="false" />
+        <activity
+            android:name=".Login_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Num_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".SignUpActivity"
+            android:exported="true" />
+        <activity
+            android:name=".all_data"
+            android:exported="true" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:label="Report Traffic Accident">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
